@@ -8,13 +8,14 @@ namespace StateDesignPattern
 {
     public interface ILightState
     {
+
         // Lambayı açma operasyonu
-        void TurnOn();
+        void TurnOn(LightContext context);
 
         // Lambayı kapatma operasyonu
-        void TurnOff();
+        void TurnOff(LightContext context);
 
         // Lambanın parlaklığını arttırma operasyonu
-        void Brighten();
+        void Brighten(LightContext context);
     }
 }
